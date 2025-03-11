@@ -6,7 +6,7 @@
     <title>Sviluppo di una pagina web - Blog Epicode</title>
     <style>
       body {
-        background-color: aliceblue;
+        background-color: hsl(60, 64%, 84%);
       }
 
       table {
@@ -19,23 +19,40 @@
       td {
         text-align: center;
         border: solid black;
-        background-color: antiquewhite;
+        background-color: hsl(34, 85%, 82%);
       }
+
     </style>
   </head>
   <body>
     <header>
       <img src="./assets/img/logo.svg" alt="EPICODE_logo" width="150px" height="50px" />
-      <h1>Epicode - Il blog dei developers</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Articoli</a></li>
-          <li><a href="#">Lavora con noi</a></li>
-        </ul>
-      </nav>
+      <span>Epicode - Il blog dei developers</span>
     </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Articoli</a></li>
+        <li><a href="#">Lavora con noi</a></li>
+      </ul>
+    </nav>
     <main>
+      <h3>Come creare un template per i post di Matio Rossi - pubblicato il 25-10-2020</h3>
+      <h4>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine</h4>
+      <h5>Le varie aree saranno quindi suddivise in:</h5>
+      <ul>
+        <li>Contenuti di intestazione del tag <header> </li>
+        <li>Contenuti centrali variabil del tag <main> </li>
+        <li>Contenuti di fine pagina comuni, da inserire nel tag <footer> </li>
+      </ul>
+      <h4>formazione del codice</h4>
+      <h4>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare tutte le parti da sekezionare con i CSS. Perciò i passi saranno:</h4>
+      <ol>
+        <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
+        <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'auto verso il basso</li>
+        <li>Applicare gli stili CSS</li>
+      </ol>
+      <h4>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressocchè totale.</h4>
       <table>
         <caption>
           Diffusione dei CSS
@@ -75,15 +92,32 @@
           </tr>
         </tbody>
       </table>
-      <h3>
-        Un test di validazione potrà eaaere fatto tramite il tool online (mettere link) dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il
-        nostro obiettivo ed essere stati dei veri developers come loro:
-      </h3>
+      <h4>Un test di validazione potrà eaaere fatto tramite il tool online <a href="#">LINK ESTERNO</a> dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:</h4>
       <iframe src="https://youtu.be/aBSZVeBRvDY?si=5uEwlbNceAFBImRa" title="Il lavoro PIÙ RICHIESTO: il Web Developer"></iframe>
-      <h3>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</h3>
+      <h4>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</h4>
       <input type="email" placeholder="Inerisci la tua mail qui" required />
       <input type="submit" value="invio" />
     </main>
-    <footer></footer>
+    <footer style="text-align: center;">
+      <hr>
+      <dev>
+        <h5 style="margin: 0;">Articoli correlati</h5>
+        <h5 style="margin: 0;">Validare il codice HTML</h5>
+        <h5 style="margin: 0;">Categoria: develop</h5>
+        <h5 style="margin: 0;">Data: 18-9-2020</h5>
+        <h5 style="margin: 0;">Correggee la sintassi</h5>
+        <h5 style="margin: 0;">Categoria: develop</h5>
+        <h5 style="margin: 0;">Data: 16-9-2020</h5>
+        <h5 style="margin: 0;">Kb nella pagina</h5>
+        <h5 style="margin: 0;">Categoria: ottimizzazione</h5>
+        <h5 style="margin: 0;">Data: 30-9-2020</h5>
+      </dev>
+      <hr>
+      <dev>
+        <h6 style="margin: 0;">Blog Epicode &#169 2025</h6>
+        <h6 style="margin: 0;">Testata online di Mario Rossi, registrata con rot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233.</h6>
+        <h6 style="margin: 0;">info@epicode.school</h6>
+      </dev>
+    </footer>
   </body>
 </html>
